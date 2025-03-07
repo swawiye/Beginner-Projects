@@ -14,9 +14,51 @@
          Your browser does not support this file
     </audio>
     <h2>Embedded Video</h2>
-    <video width="500" lenght="500" controls>
+    <!-- Adding video files to document -->
+     <video width="500" length="500" controls poster="pexels-pixabay-87611.jpg">
         <source src="The Most Beautiful Shots In Movie History.mp4" type="video/mp4">
-        Your browser does not support the video
-    </video>
+        Your browser does not support this file
+     </video>
+     <h2>HTML Tables</h2>
+     <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Nationality</th>
+            <th>Gender</th>
+            <th>Phone number</th>
+        </tr>
+        <tr>
+            <th>Zamira</th>
+            <th>19</th>
+            <th>Tanzanian</th>
+            <th>F</th>
+            <th>+254720071408</th>
+        </tr>
+        <tr>
+            <td colspan="5">Merged data</td>
+        </tr>
+        <tr>
+            <td rowspan="5">Merged rows</td>
+            <td>Data 1</td>
+        </tr>
+        <tr>
+            <td>Data 2</td>
+        </tr>
+     </table>
+     <!-- Creating forms -->
+      <h2>HTML Forms</h2>
+      <form action="/submit" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        <br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+        <br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+        <br>
+        <button type="submit" value="submit">Submit</button>
+      </form>
 </body>
 </html>

@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* Font family provides an alternative in case one font fails to load */
+    text-decoration-color: lavender;
+    background-color: thistle;
+}
+header {
+    text-align: center;
+}
+.navbar {
+    background-color: silver;
+    padding: 15px 0;
+}
+.navbar .container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-links li {
+    display: inline-block;
+    position: relative;
+}
+.nav-links li a {
+    color:linen;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+/* underline effect */
+.nav-links li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0; height: 2px;
+    background: linen;
+    transition: width 0.5s ease, left 0.5s ease;
+}
+/* hover effect */
+.nav-links li a:hover::after {
+    width: 100%;
+    left: 0;
+}
