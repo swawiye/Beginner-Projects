@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration-color: lightsteelblue;
+    background-color: lightsteelblue;
+}
+.navbar {
+    background-color: aliceblue;
+    padding: 15px 0;
+}
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .container a[href="#"] {
+    text-decoration: lightsteelblue;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-links li {
+    display: inline-block;
+    position: relative;
+}
+.nav-links li a {
+    color: lightsteelblue;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+/* underline effect */
+.nav-links li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0; height: 2px;
+    background: lightsteelblue;
+    transition: width 0.5s ease, left 0.5s ease;
+}
+/* hover effect */
+.nav-links li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+/*styling the logo*/
+.logo {
+    font-size: 24px;
+    color: lightsteelblue;
+    font-weight: bold;
+    text-decoration: wavy;
+}
+/*styling the table*/
+table{
+    width:100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+button {
+    padding: 8px;
+    background: aliceblue;
+    color: lightsteelblue;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 80px;
+}
+/* hover effect */
+button:hover {
+    background: whitesmoke;
+}
+/*styling the footer*/
+footer {
+    text-align: center;
+    background: aliceblue;
+    color: lightsteelblue;
+    padding: 20px;
+    margin-top: 20px;
+}
